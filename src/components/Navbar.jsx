@@ -1,17 +1,33 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { getAllPopularMovies } from "../Services/apicalls";
 
 export default function Navbar() {
+  const [searchKey, setSearchKey] = useState("");
+
+  const searchMovies = (e) => {
+    e.preventDefault();
+    getAllPopularMovies(searchKey);
+  };
+
   return (
     <nav>
       <ul className="nav">
         <Link to="/" className="site-title">
-          Site Name
+          The Movie DB
         </Link>
         <li>Home</li>
         <li>Popular movies</li>
-        <li style={{ display: "flex", flexDirection: "column" }}>
-          <label htmlFor="search-input">Search for movies</label>
-          <input id="search-input" name="search-input" />
+        <li className="navbarli">
+          <form className="form-container" onSubmit={searchMovies}>
+            <input
+              type="text"
+              placeholder="search"
+              onChange={(e) => setSearchKey(e.target.value)}
+            />
+            <button className="searchButton">Search</button>
+          </form>
         </li>
       </ul>
     </nav>

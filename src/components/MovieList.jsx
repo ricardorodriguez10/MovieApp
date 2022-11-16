@@ -1,9 +1,3 @@
-/**
- * original_title
- * overview
- * release_date
- */
-
 import { useEffect, useState } from "react";
 import { getAllPopularMovies } from "../Services/apicalls";
 import Movie from "./Movie";

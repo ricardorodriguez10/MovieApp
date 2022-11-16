@@ -1,0 +1,5 @@
+.homediv {
+  height: 100vh - 4rem;
+  width: 100%;
+  display: flex;
+}

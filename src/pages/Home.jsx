@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
 import MovieView from "../components/MovieView";
 import Layout from "../layout/Layout";
+import "./Home.css";
 import { getAllPopularMovies } from "../Services/apicalls";
 
 // import "../styles.css";
@@ -26,8 +27,8 @@ export default function Home() {
   return (
     <Layout>
       <div
+        className="homediv"
         /* Move to custom class */
-        style={{ height: "calc(100vh - 4rem)", width: "100%", display: "flex" }}
       >
         {/* MovieList */}
         <MovieList movies={movies} onClick={handleOnClick} />

@@ -1,0 +1,21 @@
+.moviediv {
+  background: #607eaa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.movieimg {
+  border-radius: 8px;
+  width: 40%;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+.moviecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}

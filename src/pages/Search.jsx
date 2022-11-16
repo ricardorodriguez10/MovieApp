@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
-import { searchFilms } from "../Services/apicalls";
+// import { searchFilms } from "../Services/apicalls";
 
 // const Search = () => {
 //     const [movies, setMovies] = useState([]);

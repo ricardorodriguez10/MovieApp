@@ -1,10 +1,12 @@
 .moviediv {
   background: #607eaa;
   padding: 16px;
+  border: outset black;
   border-radius: 8px;
   margin-bottom: 12px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .movieimg {

@@ -35,6 +35,7 @@ body {
 
 .nav li:hover {
   background-color: #777;
+  cursor: pointer;
 }
 
 .navbarli {

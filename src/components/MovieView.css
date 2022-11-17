@@ -6,3 +6,8 @@
   border: outset black;
   border-radius: 8px;
 }
+
+.Movie-View-Container {
+  text-align: center;
+  width: 50%;
+}

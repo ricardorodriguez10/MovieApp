@@ -17,8 +17,6 @@ export default function Navbar() {
         <Link to="/" className="site-title">
           The Movie DB
         </Link>
-        <li>Home</li>
-        <li>Popular movies</li>
         <li className="navbarli">
           <form className="form-container" onSubmit={searchMovies}>
             <input
